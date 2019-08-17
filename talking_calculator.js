@@ -1,5 +1,9 @@
 const talkingCalendar = function(date) {
-    let currentDate = new Date(date);
+    const currentDate = new Date(date);
+    const dataObj = {};
+    dataObj.date = currentDate.getDate();
+    dataObj.date = currentDate.getMonth();
+    dataObj.year = currentDate.getFullYear();
     return currentDate.toDateString()
 };
   
