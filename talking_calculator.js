@@ -19,6 +19,22 @@ const datefn = (input) => {
     }
     return input
 }
+// Month object that matches month number to readable month string
+const month = {
+    1: "January",
+    2: "February",
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December"
+}
+
 console.log(talkingCalendar("2017/12/02"));
 // console.log(talkingCalendar("2007/11/11"));
 // console.log(talkingCalendar("1987/08/24"));
