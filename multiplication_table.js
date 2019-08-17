@@ -1,6 +1,4 @@
 //function that takes a value argument and produces a multiplication table
-var prompt = require("prompt");
-prompt.start();
 //1
 
 // 1 2 3 4 5
@@ -32,13 +30,14 @@ const multiplicationTable = function(maxValue) {
     console.log(result)
   };
   
-  console.log("I will now ask you for your name.");
+  console.log("Please tell me to which number you want your multiplication table to cover?");
   process.stdin.setEncoding('utf8');
-  var name;
+  var number;
   process.stdin.on('readable', function() {
-      name = process.stdin.read();
-      if (name !== null) {
-          console.log("Hello ".concat(name, ". How are you"));
-          process.exit();
+      number = process.stdin.read();
+      if (number !== null) {
+        // convert string number to Number number
+        multiplicationTable(Number(number))
+        process.exit();
       }
   });
