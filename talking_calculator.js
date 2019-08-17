@@ -4,7 +4,7 @@ const talkingCalendar = function(date) {
     dataObj.date = currentDate.getDate();
     dataObj.month = currentDate.getMonth();
     dataObj.year = currentDate.getFullYear();
-    return `${monthObj[dataObj.month]} ${dataObj.date}, ${dataObj.year}`
+    return `${monthObj[dataObj.month]} ${datefn(dataObj.date)}, ${dataObj.year}`
 };
 
 // create function that adds ordinal indicator after ordinal number for date
