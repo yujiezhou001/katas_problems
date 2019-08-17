@@ -6,7 +6,19 @@ const talkingCalendar = function(date) {
     dataObj.year = currentDate.getFullYear();
     return currentDate.toDateString()
 };
-  
+// create function that adds ordinal indicator after ordinal number for date
+const datefn = (input) => {
+    if (input === 1) {
+      input += "st";
+    } else if (input === 2) {
+      input += "nd";
+    } else if (input === 3) {
+      input += "rd";
+    } else {
+      input += "th"
+    }
+    return input
+}
 console.log(talkingCalendar("2017/12/02"));
 // console.log(talkingCalendar("2007/11/11"));
 // console.log(talkingCalendar("1987/08/24"));
