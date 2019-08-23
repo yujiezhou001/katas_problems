@@ -1,15 +1,5 @@
 // define all constants amount for bills
 
-const twentyDollar = 2000;
-const tenDollar = 1000;
-const fiveDollar = 500;
-const twoDollar = 200;
-const oneDollar = 100;
-const quarter = 25;
-const dime = 10; 
-const nickel = 5;
-const penny = 1;
-
 const billAmount = {
     twentyDollar: 2000,
     tenDollar: 1000,
